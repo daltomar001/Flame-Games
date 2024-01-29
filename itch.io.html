@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/x-icon" href="images/flamegames.png">
+    <style>
+    /* customizable snowflake styling */
+    .snowflake {
+      color: #fff;
+      font-size: 1em;
+      font-family: Arial, sans-serif;
+      text-shadow: 0 0 5px #000;
+    }
+
+    .snowflake,.snowflake .inner{animation-iteration-count:infinite;animation-play-state:running}@keyframes snowflakes-fall{0%{transform:translateY(0)}100%{transform:translateY(110vh)}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;user-select:none;cursor:default;animation-name:snowflakes-shake;animation-duration:3s;animation-timing-function:ease-in-out}.snowflake .inner{animation-duration:10s;animation-name:snowflakes-fall;animation-timing-function:linear}.snowflake:nth-of-type(0){left:1%;animation-delay:0s}.snowflake:nth-of-type(0) .inner{animation-delay:0s}.snowflake:first-of-type{left:10%;animation-delay:1s}.snowflake:first-of-type .inner,.snowflake:nth-of-type(8) .inner{animation-delay:1s}.snowflake:nth-of-type(2){left:20%;animation-delay:.5s}.snowflake:nth-of-type(2) .inner,.snowflake:nth-of-type(6) .inner{animation-delay:6s}.snowflake:nth-of-type(3){left:30%;animation-delay:2s}.snowflake:nth-of-type(11) .inner,.snowflake:nth-of-type(3) .inner{animation-delay:4s}.snowflake:nth-of-type(4){left:40%;animation-delay:2s}.snowflake:nth-of-type(10) .inner,.snowflake:nth-of-type(4) .inner{animation-delay:2s}.snowflake:nth-of-type(5){left:50%;animation-delay:3s}.snowflake:nth-of-type(5) .inner{animation-delay:8s}.snowflake:nth-of-type(6){left:60%;animation-delay:2s}.snowflake:nth-of-type(7){left:70%;animation-delay:1s}.snowflake:nth-of-type(7) .inner{animation-delay:2.5s}.snowflake:nth-of-type(8){left:80%;animation-delay:0s}.snowflake:nth-of-type(9){left:90%;animation-delay:1.5s}.snowflake:nth-of-type(9) .inner{animation-delay:3s}.snowflake:nth-of-type(10){left:25%;animation-delay:0s}.snowflake:nth-of-type(11){left:65%;animation-delay:2.5s}
+    </style>
+    <div class="snowflakes" aria-hidden="true">
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+    </div>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Marshall Dalton">
+    <title>Flame Games</title>
+    <link href="style.css" rel="stylesheet" type="text/css" /> 
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0PC82ESMLH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0PC82ESMLH');
+  </script>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ruffle-rs/0.1.0-nightly.2023.11.5/ruffle.js"></script>
+    <script src="searchbar.js"></script>
+    <script src="script.js"></script>
+    <header>
+      <br>
+      <div class="wrapper">
+        <img src="images/flamegames.png" alt="Flame Games Logo" style="float:left;margin:10px;border-style:solid;border-radius:10px;height:90px;border-color:red">
+        <h1>Flame Games</h1>
+        <h3>Best place to access games.</h3>
+      </div>
+    </header>
+    <nav>
+      <div class="wrapper">
+        <br>
+        <p></p>
+        <br>
+        <input type="text" id="searchbar" onkeyup="search_game()" placeholder="Search Games" title="Type in a name">
+        <button id="searchbar" onClick="window.location.href = 'index.html';">Go Back</button>
+        <button style="float:left; position:absolute; right:130px;" id="searchbar" onclick="countListItems()">Game Count</button>
+        <ul id="myUL">
+          <li><a href="itch.io/drift-mile/driftmile.html">Drift Mile</a></li>
+          <li><a href="itch.io/dud/dud.html">Dud</a></li>
+          <li><a href="itch.io/helpnobrake/helpnobrake.html">HELP NO BRAKE</a></li>
+          <li><a href="itch.io/mobs-inc/mobsinc.html">Mobs Inc</a></li>
+          <li><a href="strandedonaraft/strandedonaraft.html">Stranded On A Raft</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="wrapper">
+    </main>
+    <footer>
+      <div class="wrapper">
+        <p>&copy; 2023 &bull; American Fork &bull; Flame Games</p>
+      </div>
+    </footer>
+  </body>
+</html>

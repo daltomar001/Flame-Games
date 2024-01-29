@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/x-icon" href="images/flamegames.png">
+    <style>
+    /* customizable snowflake styling */
+    .snowflake {
+      color: #fff;
+      font-size: 1em;
+      font-family: Arial, sans-serif;
+      text-shadow: 0 0 5px #000;
+    }
+
+    .snowflake,.snowflake .inner{animation-iteration-count:infinite;animation-play-state:running}@keyframes snowflakes-fall{0%{transform:translateY(0)}100%{transform:translateY(110vh)}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;user-select:none;cursor:default;animation-name:snowflakes-shake;animation-duration:3s;animation-timing-function:ease-in-out}.snowflake .inner{animation-duration:10s;animation-name:snowflakes-fall;animation-timing-function:linear}.snowflake:nth-of-type(0){left:1%;animation-delay:0s}.snowflake:nth-of-type(0) .inner{animation-delay:0s}.snowflake:first-of-type{left:10%;animation-delay:1s}.snowflake:first-of-type .inner,.snowflake:nth-of-type(8) .inner{animation-delay:1s}.snowflake:nth-of-type(2){left:20%;animation-delay:.5s}.snowflake:nth-of-type(2) .inner,.snowflake:nth-of-type(6) .inner{animation-delay:6s}.snowflake:nth-of-type(3){left:30%;animation-delay:2s}.snowflake:nth-of-type(11) .inner,.snowflake:nth-of-type(3) .inner{animation-delay:4s}.snowflake:nth-of-type(4){left:40%;animation-delay:2s}.snowflake:nth-of-type(10) .inner,.snowflake:nth-of-type(4) .inner{animation-delay:2s}.snowflake:nth-of-type(5){left:50%;animation-delay:3s}.snowflake:nth-of-type(5) .inner{animation-delay:8s}.snowflake:nth-of-type(6){left:60%;animation-delay:2s}.snowflake:nth-of-type(7){left:70%;animation-delay:1s}.snowflake:nth-of-type(7) .inner{animation-delay:2.5s}.snowflake:nth-of-type(8){left:80%;animation-delay:0s}.snowflake:nth-of-type(9){left:90%;animation-delay:1.5s}.snowflake:nth-of-type(9) .inner{animation-delay:3s}.snowflake:nth-of-type(10){left:25%;animation-delay:0s}.snowflake:nth-of-type(11){left:65%;animation-delay:2.5s}
+    </style>
+    <div class="snowflakes" aria-hidden="true">
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+    </div>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Marshall Dalton">
+    <title>Flame Games</title>
+    <link href="style.css" rel="stylesheet" type="text/css" /> 
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0PC82ESMLH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0PC82ESMLH');
+  </script>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ruffle-rs/0.1.0-nightly.2023.11.5/ruffle.js"></script>
+    <script src="searchbar.js"></script>
+    <script src="script.js"></script>
+    <header>
+      <br>
+      <div class="wrapper">
+        <img src="images/flamegames.png" alt="Flame Games Logo" style="float:left;margin:10px;border-style:solid;border-radius:10px;height:90px;border-color:red">
+        <h1>Flame Games</h1>
+        <h3>Best place to access games.</h3>
+      </div>
+    </header>
+    <nav>
+      <div class="wrapper">
+        <br>
+        <p></p>
+        <br>
+        <input type="text" id="searchbar" onkeyup="search_game()" placeholder="Search Games" title="Type in a name">
+        <ul id="myUL">
+          <br>
+          <p style="color:red">FLAME</p>
+          <li><a href="allgames.html">All Games</a></li>
+          <li><a href="htmlgames.html">HTML 5 Games</a></li>
+          <li><a href="flashgames.html">Flash Games</a></li>
+          <li><a href="nintendogames.html">Nintendo Games</a></li>
+          <li><a href="itch.io.html">Itch.io Games</a></li>
+          <br>
+          <p style="color:red">GAMES</p>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="wrapper">
+        <p3>Share this new link with as many people as you can. don't worry it wont get blocked and can't be blocked. What happened before was server issues nothing to do with school.</p3>
+        <br>
+        <p></p>
+        <p1>Just Kinda adding games whenever now. Using requested games as a idea page mostly now, However Priority Queue will still be added before anything else if I have requests in that.</p1>
+        <br>
+        <p></p>
+        <hr style= "border: 5px solid red; width:100%">
+        <br>
+        <p1>Games Added This Week:</p1>
+        <p></p>
+        <br>
+        <p2>Crossy Road Space</p2>
+        <p></p>
+        <br>
+        <p2>Animal Crossing New Worlds</p2>
+        <p></p>
+        <br>
+        <p2>Black Jack</p2>
+        <p></p>
+        <br>
+        <p2>Pokemon Red</p2>
+        <p></p>
+        <br>
+        <p2>Pokemon Blue</p2>
+        <p></p>
+        <br>
+        <p2>Slope</p2>
+        <p></p>
+        <br>
+        <p2>Slope 2</p2>
+        <p></p>
+        <br>
+        <p2>Jetpack Joyride</p2>
+        <p></p>
+        <br>
+        <p2>Super Hot</p2>
+        <p></p>
+        <br>
+        <p2>Drift Mile</p2>
+        <p></p>
+        <br>
+        <p2>Dud</p2>
+        <p></p>
+        <br>
+        <p2>Help No Brake</p2>
+        <p></p>
+        <br>
+        <p2>Mobs Inc</p2>
+        <p></p>
+        <br>
+        <p2>Stranded On A Raft</p2>
+        <p></p>
+        <br>
+        <hr style= "border: 5px solid red; width:100%">
+        <br>
+        <p1>To Request A Game Click</p1><a href="https://forms.gle/1haDBDcMbVCfbVgY9"> HERE</a>
+        <p></p>
+        <br>
+        <p1>To Join Priority Game Queue Click</p1><a href="https://forms.gle/zMBuk93t5B2Sm7Uv9"> HERE</a>
+        <p></p>
+        <br>
+        <p1>To Report A Bug Click</p1><a href="https://forms.gle/ieg3XVUGgkCu969eA"> HERE</a>
+        <p></p>
+        <br>
+        <hr style= "border: 5px solid red; width:100%">
+        <br>
+        <p1>To See Games Under Consideration Click</p1><a href="gameuc.html"> HERE</a>
+        <p></p>
+        <br>
+        <p1>To See FAQ Click</p1><a href="faq.html"> HERE</a>
+        <p></p>
+        <br>
+        <hr style= "border: 5px solid red; width:100%">
+        <p1>Recent Updates:</p1>
+        <p></p>
+        <br>
+        <p1>Stranded On A Raft Released</p1>
+        <p></p>
+        <br>
+        <p1>Dud Released</p1>
+        <p></p>
+        <br>
+        <p1>Drift Mile Released</p1>
+        <p></p>
+        <br>       
+    </main>
+    <footer>
+      <div class="wrapper">
+        <p>&copy; 2024 &bull; American Fork &bull; Flame Games</p>
+      </div>
+    </footer>
+  </body>
+</html>

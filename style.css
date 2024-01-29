@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smokum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+/*CSS reset*/
+html, body ,head {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body, p, h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+}
+#myUL ul{
+  display:none;
+}
+/*General CSS*/
+body {
+  background-color: black;
+  color: white;
+}
+header {
+  background-color: black;
+  width: 100%;
+  color: white;
+  padding: 32px 0';
+  border-bottom: 2px black;
+  margin: 0;
+}
+p {
+  font-size: 35px;
+  font-weight: bold;
+}
+p2 {
+  color: lightgreen;
+}
+p3 {
+  color: purple;
+}
+
+p4 {
+  float: right;
+}
+.wrapper {
+width: 75%;
+margin: 0 auto;
+}
+
+/*NAV BAR*/
+nav {
+  background-color: red;
+  margin: 0;
+  margin-bottom:32px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 4px 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  float:left;
+  margin: 0 16px 0 0;
+}
+
+nav ul li a {
+display: block;
+padding: 8px 16px;
+color: #fff;
+text-decoration: none;
+}
+
+nav ul li a:hover {
+text-decoration: underline;
+}
+
+nav ul li a.active:hover {
+text-decoration: none;
+}
+
+nav ul li a.active {
+background-color: rgba(255, 255, 255, 0.25);
+}
+
+/*TEXT*/
+
+h1 {
+font-weight: 600;
+font-size: 28px;
+margin-bottom: 4px;
+}
+
+h2 {
+font-weight: 600;
+font-size: 20px;
+margin-bottom: 18px;
+}
+
+h3 {
+font-weight: 550;
+font-size: 22px;
+margin-bottom: 4px;
+}
+
+p {
+margin-bottom: 18px;
+}
+
+footer {
+background-color: red;
+text-align: center;
+width: 100%;
+clear: both;
+}
+
+footer p {
+padding: 10px;
+font-size: 12px;
+}
+
+/* TABLE */
+
+table {
+border-collapse: collapse;
+width: 60%;
+border: 4px solid #000000;
+}
+
+table td, table th {
+padding: 8px;
+}
+
+table tr:nth-child(even) {
+background-color: #ffffff;
+}
+
+table tr:hover {
+background-color: #ddd;
+}
+
+table th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: #000000;
+color: white;
+font-size: 17px;
+font-weight: 500;
+}
+
+/*IMAGE*/
+
+img {
+float: left;
+}
+
+figcaption {
+text-align: center;
+}
+
+figure.mygallery {
+float: left;
+  text-align: right;
+}
+
+#searchbar{ 
+   margin-left: 15%; 
+   padding:20px; 
+   border-radius: 40px; 
+   background-color:red;
+   border-color: black;
+ } 
+
+ input[type=text] { 
+    width: 30%; 
+    -webkit-transition: width 0.15s ease-in-out; 
+    transition: width 0.15s ease-in-out; 
+ } 
+
+::placeholder {
+  color: black;
+  opacity: 1; /* Firefox */
+}
+.button {
+  margin-left: 15%; 
+   padding:20px; 
+   border-radius: 40px; 
+   background-color:red;
+   border-color: black;
+}

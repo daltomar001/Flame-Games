@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/x-icon" href="images/flamegames.png">
+    <style>
+    /* customizable snowflake styling */
+    .snowflake {
+      color: #fff;
+      font-size: 1em;
+      font-family: Arial, sans-serif;
+      text-shadow: 0 0 5px #000;
+    }
+
+    .snowflake,.snowflake .inner{animation-iteration-count:infinite;animation-play-state:running}@keyframes snowflakes-fall{0%{transform:translateY(0)}100%{transform:translateY(110vh)}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;user-select:none;cursor:default;animation-name:snowflakes-shake;animation-duration:3s;animation-timing-function:ease-in-out}.snowflake .inner{animation-duration:10s;animation-name:snowflakes-fall;animation-timing-function:linear}.snowflake:nth-of-type(0){left:1%;animation-delay:0s}.snowflake:nth-of-type(0) .inner{animation-delay:0s}.snowflake:first-of-type{left:10%;animation-delay:1s}.snowflake:first-of-type .inner,.snowflake:nth-of-type(8) .inner{animation-delay:1s}.snowflake:nth-of-type(2){left:20%;animation-delay:.5s}.snowflake:nth-of-type(2) .inner,.snowflake:nth-of-type(6) .inner{animation-delay:6s}.snowflake:nth-of-type(3){left:30%;animation-delay:2s}.snowflake:nth-of-type(11) .inner,.snowflake:nth-of-type(3) .inner{animation-delay:4s}.snowflake:nth-of-type(4){left:40%;animation-delay:2s}.snowflake:nth-of-type(10) .inner,.snowflake:nth-of-type(4) .inner{animation-delay:2s}.snowflake:nth-of-type(5){left:50%;animation-delay:3s}.snowflake:nth-of-type(5) .inner{animation-delay:8s}.snowflake:nth-of-type(6){left:60%;animation-delay:2s}.snowflake:nth-of-type(7){left:70%;animation-delay:1s}.snowflake:nth-of-type(7) .inner{animation-delay:2.5s}.snowflake:nth-of-type(8){left:80%;animation-delay:0s}.snowflake:nth-of-type(9){left:90%;animation-delay:1.5s}.snowflake:nth-of-type(9) .inner{animation-delay:3s}.snowflake:nth-of-type(10){left:25%;animation-delay:0s}.snowflake:nth-of-type(11){left:65%;animation-delay:2.5s}
+    </style>
+    <div class="snowflakes" aria-hidden="true">
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+    </div>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Marshall Dalton">
+    <title>Flame Games</title>
+    <link href="style.css" rel="stylesheet" type="text/css" /> 
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0PC82ESMLH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0PC82ESMLH');
+  </script>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ruffle-rs/0.1.0-nightly.2023.11.5/ruffle.js"></script>
+    <script src="searchbar.js"></script>
+    <script src="script.js"></script>
+    <header>
+      <br>
+      <div class="wrapper">
+        <img src="images/flamegames.png" alt="Flame Games Logo" style="float:left;margin:10px;border-style:solid;border-radius:10px;height:90px;border-color:red">
+        <h1>Flame Games</h1>
+        <h3>Best place to access games.</h3>
+      </div>
+    </header>
+    <nav>
+      <div class="wrapper">
+        <br>
+        <p></p>
+        <br>
+        <input type="text" id="searchbar" onkeyup="search_game()" placeholder="Search Games" title="Type in a name">
+        <button id="searchbar" onClick="window.location.href = 'index.html';">Go Back</button>
+        <button style="float:left; position:absolute; right:130px;" id="searchbar" onclick="countListItems()">Game Count</button>
+        <ul id="myUL">
+          <li><a href="emgames/007goldeneye.html">007 Golden Eye (N64)</a></li>
+          <li><a href="flashgames/aow.html">Age Of War</a></li>
+          <li><a href="flashgames/au.html">Achievment Unlocked</a></li>
+          <li><a href="flashgames/au2.html">Achievment Unlocked 2</a></li>
+          <li><a href="emgames/animalc.html">Animal Crossing New Worlds</a></li>
+          <li><a href="basketrandom/basketrandom.html">Basket Random</a></li>
+          <li><a href="bitlife/bitlife.html">BitLife</a></li>
+          <li><a href="blackjack/blackjack.html">Black Jack</a></li>
+          <li><a href="blight/blight.html">Blightborne</a></li>
+          <li><a href="flashgames/bloxorz.html">Bloxorz</a></li>
+          <li><a href="flashgames/btd1.html">Bloons Tower Defense 1</a></li>
+          <li><a href="flashgames/btdtwo.html">Bloons Tower Defense 2</a></li>
+          <li><a href="flashgames/btdthree.html">Bloons Tower Defense 3</a></li>
+          <li><a href="flashgames/btdfour.html">Bloons Tower Defense 4</a></li>
+          <li><a href="flashgames/clickerheros.html">Clicker Heroes</a></li>
+          <li><a href="cookieclicker/cookieclicker.html">Cookie Clicker</a></li>
+          <li><a href="crossyroad/crossyroad.html">Crossy Road Space</a></li>
+          <li><a href="cuttherope/cuttherope.html">Cut The Rope</a></li>
+          <li><a href="flashgames/diggy.html">Diggy</a></li>
+          <li><a href="flashgames/doodlejump.html">Doodle Jump</a></li>
+          <li><a href="itch.io/drift-mile/driftmile.html">Drift Mile</a></li>
+          <li><a href="drivemad/drivemad.html">Drive Mad</a></li>
+          <li><a href="emgames/drmario.html">Dr Mario (GBA)</a></li>
+          <li><a href="flashgames/ducklifeone.html">Duck Life 1</a></li>
+          <li><a href="flashgames/ducklifetwo.html">Duck Life 2</a></li>
+          <li><a href="flashgames/ducklifethree.html">Duck Life 3</a></li>
+          <li><a href="itch.io/dud/dud.html">Dud</a></li>
+          <li><a href="fnaf1/fnaf1.html">Fnaf 1</a></li>
+          <li><a href="fnaf2/fnaf2.html">Fnaf 2</a></li>
+          <li><a href="fnaf3/fnaf3.html">Fnaf 3</a></li>
+          <li><a href="fnaf4/fnaf4.html">Fnaf 4</a></li>
+          <li><a href="getawayshootout/getawayshootout.html">Getaway Shootout</a></li>
+          <li><a href="itch.io/helpnobrake/helpnobrake.html">HELP NO BRAKE</a></li>
+          <li><a href="flashgames/jacksmith.html">Jacksmith</a></li>
+          <li><a href="jetpackjoyride/jetpackjoyride.html">Jetpack Joyride</a></li>
+          <li><a href="flashgames/kingdomrush.html">Kingdom Rush</a></li>
+          <li><a href="flashgames/learntofly.html">Learn To Fly</a></li>
+          <li><a href="flashgames/learntoflytwo.html">Learn To Fly 2</a></li>
+          <li><a href="emgames/lozoot.html">Legend Of Zelda Ocarina Of Time (N64)</a></li>
+          <li><a href="emgames/batman.html">Lego Batman (DS)</a></li>
+          <li><a href="emgames/lbn.html">Lego Battles Ninjago (DS)</a></li>
+          <li><a href="emgames/starwars.html">Lego Star Wars The Complete Saga (DS)</a></li>
+          <li><a href="emgames/pirates.html">Lego Pirates Of The Caribbean (DS)</a></li>
+          <li><a href="emgames/mariokart.html">Mario Kart (DS)</a></li>
+          <li><a href="emgames/mariokart64.html">Mario Kart (N64)</a></li>
+          <li><a href="emgames/mariopinball.html">Mario Pinball (GBA)</a></li>
+          <li><a href="emgames/metroidfusion.html">Metroid Fusion (GBA)</a></li>
+          <li><a href="minecraft/minecraft.html">Minecraft</a></li>
+          <li><a href="itch.io/mobs-inc/mobsinc.html">Mobs Inc</a></li>
+          <li><a href="flashgames/n.html">N</a></li>
+          <li><a href="emgames/newsupermario.html">New Super Mario Bros (DS)</a></li>
+          <li><a href="flashgames/pburgeria.html">Papas Burgeria</a></li>
+          <li><a href="flashgames/pcupcakeria.html">Papas Cupcakeria</a></li>
+          <li><a href="flashgames/pfrezeria.html">Papas Freezeria</a></li>
+          <li><a href="flashgames/ppizzeria.html">Papas Pizzeria</a></li>
+          <li><a href="flashgames/psushiria.html">Papas Sushiria</a></li>
+          <li><a href="emgames/pvz.html">Plants Vs Zombies (DS)</a></li>
+          <li><a href="emgames/pokemonblue.html">Pokemon Blue (GB)</a></li>
+          <li><a href="emgames/pokemonemerald.html">Pokemon Emerald (GBA)</a></li>
+          <li><a href="emgames/pokemonred.html">Pokemon Red (GBA)</a></li>
+          <li><a href="flashgames/portal.html">Portal</a></li>
+          <li><a href="flashgames/raftwars.html">Raft Wars</a></li>
+          <li><a href="flashgames/raftwarstwo.html">Raft Wars 2</a></li>
+          <li><a href="rooftop/rooftopsnipers.html">Rooftop Snipers</a></li>
+          <li><a href="bowman/bowman.html">Rookie Bowman</a></li>
+          <li><a href="flashgames/run1.html">Run 1</a></li>
+          <li><a href="flashgames/runtwo.html">Run 2</a></li>
+          <li><a href="slope/slope.html">Slope</a></li>
+          <li><a href="slope2/slope2.html">Slope 2</a></li>
+          <li><a href="emgames/sonicadvance.html">Sonic Advance (GBA)</a></li>
+          <li><a href="strandedonaraft/strandedonaraft.html">Stranded On A Raft</a></li>
+          <li><a href="subwaysurfers/subwaysurfers.html">Subway Surfers</a></li>
+          <li><a href="superhot/superhot.html">Super Hot</a></li>
+          <li><a href="emgames/ssb.html">Super Smash Bros (N64)</a></li>
+          <li><a href="flashgames/smashflash.html">Super Smash Flash</a></li>
+          <li><a href="emgames/streetfighter2.html">Super Street Fighter 2 (GBA)</a></li>
+          <li><a href="flashgames/supermariost.html">Super Mario 63</a></li>
+          <li><a href="emgames/supermariobros.html">Super Mario Bros (NES)</a></li>
+          <li><a href="emgames/supermariobros2.html">Super Mario Bros 2 (NES)</a></li>
+          <li><a href="emgames/supermariobros3.html">Super Mario Bros 3 (NES)</a></li>
+          <li><a href="flashgames/supermeatboy.html">Super Meat Boy</a></li>
+          <li><a href="emgames/superstreetfighter2.html">Super Street Fighter 2 (SNES)</a></li>
+          <li><a href="flashgames/tanktrouble.html">Tank Trouble</a></li>
+          <li><a href="templerun/templerun.html">Temple Run 2</a></li>
+          <li><a href="emgames/tetris.html">Tetris (NES)</a></li>
+          <li><a href="emgames/tetrisworlds.html">Tetris Worlds (GBA)</a></li>
+          <li><a href="emgames/thps2.html">Tony Hawks Pro Skater 2 (N64)</a></li>
+          <li><a href="emgames/mortalkombat.html">Ultimate Mortal Combat (DS)</a></li>
+          <li><a href="flashgames/whg.html">Worlds Hardest Game</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="wrapper">
+    </main>
+    <footer>
+      <div class="wrapper">
+        <p>&copy; 2023 &bull; American Fork &bull; Flame Games</p>
+      </div>
+    </footer>
+  </body>
+</html>
